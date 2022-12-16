@@ -1,0 +1,18 @@
+.Showtodolist{
+    margin-top: 20px;
+}
+.showlist{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+.showtxt{
+    width: 200px;
+  
+}
+                     
+.done{
+    color: green;
+    opacity: 0.5;
+}
