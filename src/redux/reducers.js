@@ -10,9 +10,10 @@ const todolist = (state = initialState, action) => {
             return { todo: [...state.todo, action.payload] };
         case DELETE_TODO_ITEM:
             const delTodo = state.todo.filter(
-                (item) => item.id !== action.payload
+                (item) => item.id !== action.payload.id
             )
-            return { todo: delTodo };
+            // return { todo: delTodo };
+            return {todo:delTodo};
 
         case UPDATE_TODO_ITEM:
             let dataupdate = action.payload;
